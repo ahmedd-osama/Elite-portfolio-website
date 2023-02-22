@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website </title>
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="css/normalize/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap-modified.css">
+    <link rel="stylesheet" href="modules/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Cairo', sans-serif;
+      }
+    </style>
+</head>
+<body>
+<main>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container ">
+        <a class="navbar-brand" href="#"><i class="fa-solid fa-brush fs-2"></i> Elite</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto ms-auto  mb-lg-0 w-100 justify-content-around">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#statistics">Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#clients">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  <div class="landing bg-blue-c overflow-hidden" id="home">
+    <div class="container h-100 align-items-center">
+      <div class="row align-items-center justify-content-center h-100">
+        <div class="col-sm-12 col-md-6 d-flex align-items-center justify-content-start">
+          <h1 class="gradient-text text-center text-md-start w-100 hidden-right" >We are <span class="auto-typed"></span></h1>
+        </div>
+        <div class="col-sm-12 col-md-6 ">
+          <div class="img-group w-100 position-relative" parallex-move="0,-100" animation-loop="false" >
+            <img src="images/work/1.jpg" class="hidden-above" alt="">
+            <img src="images/work/6.png" alt="" class="hidden-left" >
+            <img src="images/work/7.png" alt="" class="hidden-below">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio py-5" id="portfolio">
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >The best art work in market </p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Portfolio</h2>
+    </div>
+    <div class="parallex-item d-none d-lg-block" parallex-move="0,-200">
+      <img src="images/work/2.jpg" alt="">
+    </div>
+    <div class="parallex-item d-none d-lg-block"parallex-move="0,-200">
+      <img src="images/work/3.jpg" alt="">
+    </div>
+    <div class="container">
+      <div class="filters">
+        <div class="row hidden-below">
+          <div class="col-12 d-flex align-items-center gap-2">
+            <ul class="d-flex align-items-center gap-2 justify-content-center w-100 flex-wrap" id="portfolio-filters" >
+              <li ><button class="btn  btn-outline-blue-light rounded-pill text-white py-1 text-capitalize active" type="button" data-filter = "*">all</button></li>
+              <li ><button class="btn  btn-outline-blue-light rounded-pill text-white py-1 text-capitalize" type="button" data-filter = ".filter-recent">recent</button></li>
+              <li ><button class="btn  btn-outline-blue-light rounded-pill text-white py-1 text-capitalize" type="button" data-filter = ".filter-modern">Modern</button></li>
+              <li ><button class="btn  btn-outline-blue-light rounded-pill text-white py-1 text-capitalize" type="button" data-filter = ".filter-retro">retro</button></li>
+              <li ><button class="btn  btn-outline-blue-light rounded-pill text-white py-1 text-capitalize" type="button" data-filter = ".filter-vector">vector</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+        <div class="row portfolio-container  gy-4 hidden-fade-in animation-delay ="0">
+
+        </div>
+        <div class="col-12 d-flex justify-content-center align-items-center">
+          <button class="btn btn-large btn-outline-blue-light text-white fs-5 mt-3" id="portfolio-load">Load More</button>
+        </div>
+    </div>
+  </div>
+  <div class="reviews py-5" id = "reviews">
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >What our clients say</p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Reviews<h2>
+    </div>
+    <div class="custom-background py-5">
+      <div class="container ">
+        <div class="reviews-slider swiper hidden-below">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Elite is one of the most profissional organizations I ever dealt with</blockquote>
+              </div>
+              <img src="images/avatars/0.png" alt="">
+              <h4>Michel Orso</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Good attention to all details. A very good expeirince overall</blockquote>
+              </div>
+              <img src="images/avatars/1.png" alt="">
+              <h4>Lora Norman</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Elite is one of the most profissional organizations I ever dealt with</blockquote>
+              </div>
+              <img src="images/avatars/2.png" alt="">
+              <h4>Michel Orso</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Good attention to all details. A very good expeirince overall</blockquote>
+              </div>
+              <img src="images/avatars/3.png" alt="">
+              <h4>Lora Norman</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Elite is one of the most profissional organizations I ever dealt with</blockquote>
+              </div>
+              <img src="images/avatars/4.png" alt="">
+              <h4>Michel Orso</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testmonial">
+                <blockquote>Good attention to all details. A very good expeirince overall</blockquote>
+              </div>
+              <img src="images/avatars/5.png" alt="">
+              <h4>Lora Norman</h4>
+              <p class="text-whte-50"> CEO and Founder of XYZ company</p>
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="statistics py-5" id='statistics'>
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >Our Achievements in numbers</p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Statistics<h2>
+    </div>
+    <div class="container hidden-below">
+      <div class="row gap-4 justify-content-center ">
+        <div class="col-12 col-md-6 hidden-below">
+          <div class="icon"><i class="fa-solid fa-user"></i></div>
+          <div class="info">
+            <span data-purecounter-start="0" data-purecounter-end="1325" data-purecounter-duration="1" class ="purecounter">1325</span>
+            <p>happy customers</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 hidden-below">
+          <div class="icon"><i class="fa-solid fa-palette"></i></div>
+          <div class="info">
+            <span data-purecounter-start="0" data-purecounter-end="1325" data-purecounter-duration="1" class ="purecounter">7530</span>
+            <p>Art Pieces</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6  hidden-below">
+          <div class="icon"><i class="fa-regular fa-copyright"></i></div>
+          <div class="info">
+            <span data-purecounter-start="0" data-purecounter-end="1325" data-purecounter-duration="1" class ="purecounter">56</span>
+            <p>Brand Created</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 hidden-below">
+          <div class="icon"><i class="fa-solid fa-paintbrush"></i></div>
+          <div class="info">
+            <span data-purecounter-start="0" data-purecounter-end="1325" data-purecounter-duration="1" class ="purecounter">60</span>
+            <p>Artists</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="clients py-5" id = "clients">
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >our top clients</p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Clients</h2>
+    </div>
+    <div class="custom-background py-2">
+      <div class="container ">
+        <div class="clients-slider swiper hidden-below">
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="images/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="images/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="events py-5" id="events">
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >Our Upcominig Events</p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Events</h2>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="image col-md-4 hidden-below d-flex justify-content-center">
+          <img src="images/event.png" alt="" class="">
+        </div>
+        <div class="countdown-container col-md-8 d-flex flex-column justify-content-around align-items-center ">
+          <div class="countdown hidden-below">
+            <div class="time">
+              <div class="days"><span class>100</span> <p>Days</p></div>
+              <div class="hours"><span class>29</span> <p>Hours</p></div>
+              <div class="minutes"><span class>29</span> <p>Min</p></div>
+              <div class="seconds"><span class>29</span> <p>Sec</p></div>
+            </div>
+            <h4 class="text-capitalize">Stay tuned for our next event</h4>
+          </div>
+          <div class="email-input d-flex align-items-center hidden-below">
+            <p>Subscribe to our news letter to get notified </p>
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder = 'Please Type Your Email'>
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact py-5" id="contact">
+    <div class="main-title text-center d-flex justify-content-center flex-column overflow-hidden">
+      <div class="sub-title-container d-flex justify-content-center align-items-center mb-3 hidden-fade-in">
+        <div class="line-left"><div class="filler h-100" style="width: 10%; min-width: 20px;" ></div></div>
+        <p class="sub-title text-5  text-capitalize  position-relative text-fit px-2" >Contact us and get work done</p>
+        <div class="line-right"><div class="filler h-100"style="width: 10%; min-width: 20px;"></div></div>
+      </div>
+      <h2 class="title text-1 mb-4 hidden-fade-in">Contact</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="tiles d-flex flex-wrap">
+            <div class="tile hidden-below">
+              <i class="fa-solid fa-phone"></i>
+              <h4>Call Us</h4>
+              <p>055 59438593</p>
+              <p>+20 118 4056 394</p>
+            </div>
+            <div class="tile hidden-below">
+              <i class="fa-solid fa-location-dot"></i>
+              <h4>Adress</h4>
+              <p>A108 Almoez Street,</p>
+              <p>Cairo, Eg</p>
+            </div>
+            <div class="tile hidden-below">
+              <i class="fa-regular fa-envelope"></i>
+              <h4>Email Us</h4>
+              <p>info@example.com</p>
+              <p>contact@example.com</p>
+            </div>
+            <div class="tile hidden-below">
+              <i class="fa-brands fa-behance"></i>
+              <h4>Behance</h4>
+              <p>@Elite.Behance</p>
+            </div>
+          </div>
+          </div>
+        <form class="col-md-6 contact-form d-flex flex-column justify-content-between hidden-below" onsubmit="validateMyForm();event.preventDefault()">
+          <h3>Send us a message</h3>
+          <input type="text" placeholder="Name">
+          <input type="email" placeholder="Email">
+          <textarea name="message" id="messageText" cols="30" rows="10" placeholder="Message"></textarea>
+          <button  id ="contactSend"> Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer class = "footer py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 info">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-brush fs-2"></i> Elite</a>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione incidunt corrupti quisquam consectetur voluptatum placeat sed rerum accusamus omnis. Dolorem?</p>
+          <div class="socials d-flex gap-2">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="wraper">
+            <div class="links">
+              <h4>links</h4>
+              <ul>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#"> Home</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#portfolio"> Portfolio</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#reviews"> Reviews</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#statistics"> Statistics</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#clients"> Clients</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#events"> Events</a></li>
+                <li><i class="fa-solid fa-chevron-right"></i> <a href="#contact"> Contact</a></li>
+              </ul>
+            </div>
+            <div class="contact">
+              <h4>Contact Us</h4>
+              <p>
+                A108 Adam Street <br>
+                Cairo, EG 535022<br>
+                Egypt <br><br>
+                <strong>Phone:</strong> +1 1234 5678 890<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; Copyright <strong><span>Elite</span></strong>. All Rights Reserved
+    </div>
+    <div class="link">
+      Developed And Designed By <a href="https://github.com/ahmedd-osama">Ahmed Osama</a>
+    </div>
+  </div>
+  </footer>
+</main>
+<script src="scripts/dist/bootstrap.bundle.min.js"></script>
+<script src="scripts/dist/all.min.js"></script>
+<script src="node_modules/typed.js/lib/typed.js"></script> 
+<script src="modules/parallex/parallex.js"></script>
+<script src="modules/glightbox/js/glightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="modules/purecounter/purecounter_vanilla.js"></script>
+<script src="scripts/dist/app.js"></script>
+</body>
+</html>

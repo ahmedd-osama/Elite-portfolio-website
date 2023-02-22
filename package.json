@@ -1,0 +1,19 @@
+{
+  "name": "portfolio_template_bootstrap_sass_typescript",
+  "version": "1.0.0",
+  "description": "Intro About the project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "isotope-cells-by-row": "^1.1.4",
+    "isotope-fit-columns": "^1.1.4",
+    "smooth-scrollbar": "^8.8.1",
+    "typed": "^4.1.2",
+    "typed.js": "^2.0.12"
+  }
+}

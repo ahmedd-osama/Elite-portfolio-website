@@ -1,0 +1,18 @@
+// Overwriting the bootstrap variables
+$white-color: #e3effa;
+$primary: #00f;
+$danger: blue;
+@import "../../node_modules/bootstrap/scss/_functions";
+@import "../../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "altlight": #f2ebfa,
+  "altdark": #522192,
+  "brown": #362222,
+  "blue-color": #297EA6,
+  "blue-light": #41b6ec,
+  "white": $white-color
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
