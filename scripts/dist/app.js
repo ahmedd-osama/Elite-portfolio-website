@@ -399,5 +399,13 @@ window.addEventListener('load', () => {
     document.getElementById('contactSend').addEventListener('click', (e) => {
         Array.from(document.querySelectorAll('.contact form input,.contact form textarea')).forEach((input) => input.value = '');
     });
+    var options = {
+        strings: ["Designers", "Creative", "Artists", "Elite^10000"],
+        typeSpeed: 105,
+        backSpeed: 100,
+        loop: true,
+        delay: 5000
+    };
+    var typed = new Typed('.auto-typed', options);
     // end of onload()
 });
